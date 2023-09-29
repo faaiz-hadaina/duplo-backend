@@ -1,0 +1,1513 @@
+2023-09-28 12:34:23 error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/ {
+  service: 'index',
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-ag6cnrz-shard-00-01.j7qp45o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-ag6cnrz-shard-00-01.j7qp45o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 39651567,
+        lastWriteDate: 0,
+        error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+        
+            at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+            at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          },
+          [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null
+      },
+      'ac-ag6cnrz-shard-00-00.j7qp45o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-ag6cnrz-shard-00-00.j7qp45o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 39651645,
+        lastWriteDate: 0,
+        error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+        
+            at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+            at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          },
+          [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null
+      },
+      'ac-ag6cnrz-shard-00-02.j7qp45o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-ag6cnrz-shard-00-02.j7qp45o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 39651630,
+        lastWriteDate: 0,
+        error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+        
+            at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+            at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          },
+          [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-12aw0j-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  stack: "MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/\n" +
+    '    at _handleConnectionErrors (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:805:11)\n' +
+    '    at NativeConnection.openUri (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:780:11)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async connectToMongoDB (/home/musediq/Documents/duplo-backend/index.js:18:5)',
+  [Symbol(level)]: 'error',
+  [Symbol(splat)]: [
+    MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+        at _handleConnectionErrors (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:805:11)
+        at NativeConnection.openUri (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:780:11)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async connectToMongoDB (/home/musediq/Documents/duplo-backend/index.js:18:5) {
+      reason: TopologyDescription {
+        type: 'ReplicaSetNoPrimary',
+        servers: Map(3) {
+          'ac-ag6cnrz-shard-00-01.j7qp45o.mongodb.net:27017' => ServerDescription {
+            address: 'ac-ag6cnrz-shard-00-01.j7qp45o.mongodb.net:27017',
+            type: 'Unknown',
+            hosts: [],
+            passives: [],
+            arbiters: [],
+            tags: {},
+            minWireVersion: 0,
+            maxWireVersion: 0,
+            roundTripTime: -1,
+            lastUpdateTime: 39651567,
+            lastWriteDate: 0,
+            error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+            
+                at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+                at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+                at Object.onceWrapper (node:events:629:26)
+                at TLSSocket.emit (node:events:514:28)
+                at emitErrorNT (node:internal/streams/destroy:151:8)
+                at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+              cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+              ] {
+                library: 'SSL routines',
+                reason: 'tlsv1 alert internal error',
+                code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+              },
+              [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+            },
+            topologyVersion: null,
+            setName: null,
+            setVersion: null,
+            electionId: null,
+            logicalSessionTimeoutMinutes: null,
+            primary: null,
+            me: null,
+            '$clusterTime': null
+          },
+          'ac-ag6cnrz-shard-00-00.j7qp45o.mongodb.net:27017' => ServerDescription {
+            address: 'ac-ag6cnrz-shard-00-00.j7qp45o.mongodb.net:27017',
+            type: 'Unknown',
+            hosts: [],
+            passives: [],
+            arbiters: [],
+            tags: {},
+            minWireVersion: 0,
+            maxWireVersion: 0,
+            roundTripTime: -1,
+            lastUpdateTime: 39651645,
+            lastWriteDate: 0,
+            error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+            
+                at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+                at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+                at Object.onceWrapper (node:events:629:26)
+                at TLSSocket.emit (node:events:514:28)
+                at emitErrorNT (node:internal/streams/destroy:151:8)
+                at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+              cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+              ] {
+                library: 'SSL routines',
+                reason: 'tlsv1 alert internal error',
+                code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+              },
+              [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+            },
+            topologyVersion: null,
+            setName: null,
+            setVersion: null,
+            electionId: null,
+            logicalSessionTimeoutMinutes: null,
+            primary: null,
+            me: null,
+            '$clusterTime': null
+          },
+          'ac-ag6cnrz-shard-00-02.j7qp45o.mongodb.net:27017' => ServerDescription {
+            address: 'ac-ag6cnrz-shard-00-02.j7qp45o.mongodb.net:27017',
+            type: 'Unknown',
+            hosts: [],
+            passives: [],
+            arbiters: [],
+            tags: {},
+            minWireVersion: 0,
+            maxWireVersion: 0,
+            roundTripTime: -1,
+            lastUpdateTime: 39651630,
+            lastWriteDate: 0,
+            error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+            
+                at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+                at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+                at Object.onceWrapper (node:events:629:26)
+                at TLSSocket.emit (node:events:514:28)
+                at emitErrorNT (node:internal/streams/destroy:151:8)
+                at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+              cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+              ] {
+                library: 'SSL routines',
+                reason: 'tlsv1 alert internal error',
+                code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+              },
+              [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+            },
+            topologyVersion: null,
+            setName: null,
+            setVersion: null,
+            electionId: null,
+            logicalSessionTimeoutMinutes: null,
+            primary: null,
+            me: null,
+            '$clusterTime': null
+          }
+        },
+        stale: false,
+        compatible: true,
+        heartbeatFrequencyMS: 10000,
+        localThresholdMS: 15,
+        setName: 'atlas-12aw0j-shard-0',
+        maxElectionId: null,
+        maxSetVersion: null,
+        commonWireVersion: 0,
+        logicalSessionTimeoutMinutes: null
+      },
+      code: undefined
+    }
+  ],
+  [Symbol(message)]: `{"level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{},"setName":"atlas-12aw0j-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"service":"index","stack":"MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/\\n    at _handleConnectionErrors (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:805:11)\\n    at NativeConnection.openUri (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:780:11)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\\n    at async connectToMongoDB (/home/musediq/Documents/duplo-backend/index.js:18:5)","timestamp":"2023-09-28 12:34:23"}`
+}
+2023-09-28 12:34:23 error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/ {
+  service: 'index',
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-ag6cnrz-shard-00-01.j7qp45o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-ag6cnrz-shard-00-01.j7qp45o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 39651567,
+        lastWriteDate: 0,
+        error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+        
+            at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+            at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          },
+          [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null
+      },
+      'ac-ag6cnrz-shard-00-00.j7qp45o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-ag6cnrz-shard-00-00.j7qp45o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 39651645,
+        lastWriteDate: 0,
+        error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+        
+            at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+            at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          },
+          [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null
+      },
+      'ac-ag6cnrz-shard-00-02.j7qp45o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-ag6cnrz-shard-00-02.j7qp45o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 39651630,
+        lastWriteDate: 0,
+        error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+        
+            at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+            at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          },
+          [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-12aw0j-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  stack: "MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/\n" +
+    '    at _handleConnectionErrors (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:805:11)\n' +
+    '    at NativeConnection.openUri (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:780:11)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async connectToMongoDB (/home/musediq/Documents/duplo-backend/index.js:18:5)',
+  [Symbol(level)]: 'error',
+  [Symbol(splat)]: [
+    MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+        at _handleConnectionErrors (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:805:11)
+        at NativeConnection.openUri (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:780:11)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async connectToMongoDB (/home/musediq/Documents/duplo-backend/index.js:18:5) {
+      reason: TopologyDescription {
+        type: 'ReplicaSetNoPrimary',
+        servers: Map(3) {
+          'ac-ag6cnrz-shard-00-01.j7qp45o.mongodb.net:27017' => ServerDescription {
+            address: 'ac-ag6cnrz-shard-00-01.j7qp45o.mongodb.net:27017',
+            type: 'Unknown',
+            hosts: [],
+            passives: [],
+            arbiters: [],
+            tags: {},
+            minWireVersion: 0,
+            maxWireVersion: 0,
+            roundTripTime: -1,
+            lastUpdateTime: 39651567,
+            lastWriteDate: 0,
+            error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+            
+                at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+                at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+                at Object.onceWrapper (node:events:629:26)
+                at TLSSocket.emit (node:events:514:28)
+                at emitErrorNT (node:internal/streams/destroy:151:8)
+                at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+              cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+              ] {
+                library: 'SSL routines',
+                reason: 'tlsv1 alert internal error',
+                code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+              },
+              [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+            },
+            topologyVersion: null,
+            setName: null,
+            setVersion: null,
+            electionId: null,
+            logicalSessionTimeoutMinutes: null,
+            primary: null,
+            me: null,
+            '$clusterTime': null
+          },
+          'ac-ag6cnrz-shard-00-00.j7qp45o.mongodb.net:27017' => ServerDescription {
+            address: 'ac-ag6cnrz-shard-00-00.j7qp45o.mongodb.net:27017',
+            type: 'Unknown',
+            hosts: [],
+            passives: [],
+            arbiters: [],
+            tags: {},
+            minWireVersion: 0,
+            maxWireVersion: 0,
+            roundTripTime: -1,
+            lastUpdateTime: 39651645,
+            lastWriteDate: 0,
+            error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+            
+                at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+                at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+                at Object.onceWrapper (node:events:629:26)
+                at TLSSocket.emit (node:events:514:28)
+                at emitErrorNT (node:internal/streams/destroy:151:8)
+                at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+              cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+              ] {
+                library: 'SSL routines',
+                reason: 'tlsv1 alert internal error',
+                code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+              },
+              [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+            },
+            topologyVersion: null,
+            setName: null,
+            setVersion: null,
+            electionId: null,
+            logicalSessionTimeoutMinutes: null,
+            primary: null,
+            me: null,
+            '$clusterTime': null
+          },
+          'ac-ag6cnrz-shard-00-02.j7qp45o.mongodb.net:27017' => ServerDescription {
+            address: 'ac-ag6cnrz-shard-00-02.j7qp45o.mongodb.net:27017',
+            type: 'Unknown',
+            hosts: [],
+            passives: [],
+            arbiters: [],
+            tags: {},
+            minWireVersion: 0,
+            maxWireVersion: 0,
+            roundTripTime: -1,
+            lastUpdateTime: 39651630,
+            lastWriteDate: 0,
+            error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+            
+                at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+                at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+                at Object.onceWrapper (node:events:629:26)
+                at TLSSocket.emit (node:events:514:28)
+                at emitErrorNT (node:internal/streams/destroy:151:8)
+                at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+              cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+              ] {
+                library: 'SSL routines',
+                reason: 'tlsv1 alert internal error',
+                code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+              },
+              [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+            },
+            topologyVersion: null,
+            setName: null,
+            setVersion: null,
+            electionId: null,
+            logicalSessionTimeoutMinutes: null,
+            primary: null,
+            me: null,
+            '$clusterTime': null
+          }
+        },
+        stale: false,
+        compatible: true,
+        heartbeatFrequencyMS: 10000,
+        localThresholdMS: 15,
+        setName: 'atlas-12aw0j-shard-0',
+        maxElectionId: null,
+        maxSetVersion: null,
+        commonWireVersion: 0,
+        logicalSessionTimeoutMinutes: null
+      },
+      code: undefined
+    }
+  ],
+  [Symbol(message)]: `{"level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{},"setName":"atlas-12aw0j-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"service":"index","stack":"MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/\\n    at _handleConnectionErrors (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:805:11)\\n    at NativeConnection.openUri (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:780:11)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\\n    at async connectToMongoDB (/home/musediq/Documents/duplo-backend/index.js:18:5)","timestamp":"2023-09-28 12:34:23"}`
+}
+2023-09-28 12:34:23 error: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/ {
+  service: 'index',
+  reason: TopologyDescription {
+    type: 'ReplicaSetNoPrimary',
+    servers: Map(3) {
+      'ac-ag6cnrz-shard-00-01.j7qp45o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-ag6cnrz-shard-00-01.j7qp45o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 39651567,
+        lastWriteDate: 0,
+        error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+        
+            at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+            at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          },
+          [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null
+      },
+      'ac-ag6cnrz-shard-00-00.j7qp45o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-ag6cnrz-shard-00-00.j7qp45o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 39651645,
+        lastWriteDate: 0,
+        error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+        
+            at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+            at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          },
+          [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null
+      },
+      'ac-ag6cnrz-shard-00-02.j7qp45o.mongodb.net:27017' => ServerDescription {
+        address: 'ac-ag6cnrz-shard-00-02.j7qp45o.mongodb.net:27017',
+        type: 'Unknown',
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        lastUpdateTime: 39651630,
+        lastWriteDate: 0,
+        error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+        
+            at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+            at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+            at Object.onceWrapper (node:events:629:26)
+            at TLSSocket.emit (node:events:514:28)
+            at emitErrorNT (node:internal/streams/destroy:151:8)
+            at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+            at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+          cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+          ] {
+            library: 'SSL routines',
+            reason: 'tlsv1 alert internal error',
+            code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+          },
+          [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        primary: null,
+        me: null,
+        '$clusterTime': null
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: 'atlas-12aw0j-shard-0',
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  stack: "MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/\n" +
+    '    at _handleConnectionErrors (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:805:11)\n' +
+    '    at NativeConnection.openUri (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:780:11)\n' +
+    '    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n' +
+    '    at async connectToMongoDB (/home/musediq/Documents/duplo-backend/index.js:18:5)',
+  [Symbol(level)]: 'error',
+  [Symbol(splat)]: [
+    MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/
+        at _handleConnectionErrors (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:805:11)
+        at NativeConnection.openUri (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:780:11)
+        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+        at async connectToMongoDB (/home/musediq/Documents/duplo-backend/index.js:18:5) {
+      reason: TopologyDescription {
+        type: 'ReplicaSetNoPrimary',
+        servers: Map(3) {
+          'ac-ag6cnrz-shard-00-01.j7qp45o.mongodb.net:27017' => ServerDescription {
+            address: 'ac-ag6cnrz-shard-00-01.j7qp45o.mongodb.net:27017',
+            type: 'Unknown',
+            hosts: [],
+            passives: [],
+            arbiters: [],
+            tags: {},
+            minWireVersion: 0,
+            maxWireVersion: 0,
+            roundTripTime: -1,
+            lastUpdateTime: 39651567,
+            lastWriteDate: 0,
+            error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+            
+                at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+                at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+                at Object.onceWrapper (node:events:629:26)
+                at TLSSocket.emit (node:events:514:28)
+                at emitErrorNT (node:internal/streams/destroy:151:8)
+                at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+              cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+              ] {
+                library: 'SSL routines',
+                reason: 'tlsv1 alert internal error',
+                code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+              },
+              [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+            },
+            topologyVersion: null,
+            setName: null,
+            setVersion: null,
+            electionId: null,
+            logicalSessionTimeoutMinutes: null,
+            primary: null,
+            me: null,
+            '$clusterTime': null
+          },
+          'ac-ag6cnrz-shard-00-00.j7qp45o.mongodb.net:27017' => ServerDescription {
+            address: 'ac-ag6cnrz-shard-00-00.j7qp45o.mongodb.net:27017',
+            type: 'Unknown',
+            hosts: [],
+            passives: [],
+            arbiters: [],
+            tags: {},
+            minWireVersion: 0,
+            maxWireVersion: 0,
+            roundTripTime: -1,
+            lastUpdateTime: 39651645,
+            lastWriteDate: 0,
+            error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+            
+                at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+                at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+                at Object.onceWrapper (node:events:629:26)
+                at TLSSocket.emit (node:events:514:28)
+                at emitErrorNT (node:internal/streams/destroy:151:8)
+                at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+              cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+              ] {
+                library: 'SSL routines',
+                reason: 'tlsv1 alert internal error',
+                code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+              },
+              [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+            },
+            topologyVersion: null,
+            setName: null,
+            setVersion: null,
+            electionId: null,
+            logicalSessionTimeoutMinutes: null,
+            primary: null,
+            me: null,
+            '$clusterTime': null
+          },
+          'ac-ag6cnrz-shard-00-02.j7qp45o.mongodb.net:27017' => ServerDescription {
+            address: 'ac-ag6cnrz-shard-00-02.j7qp45o.mongodb.net:27017',
+            type: 'Unknown',
+            hosts: [],
+            passives: [],
+            arbiters: [],
+            tags: {},
+            minWireVersion: 0,
+            maxWireVersion: 0,
+            roundTripTime: -1,
+            lastUpdateTime: 39651630,
+            lastWriteDate: 0,
+            error: MongoNetworkError: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+            
+                at connectionFailureError (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:367:20)
+                at TLSSocket.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connect.js:290:22)
+                at Object.onceWrapper (node:events:629:26)
+                at TLSSocket.emit (node:events:514:28)
+                at emitErrorNT (node:internal/streams/destroy:151:8)
+                at emitErrorCloseNT (node:internal/streams/destroy:116:3)
+                at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+              cause: [Error: C017094CE97F0000:error:0A000438:SSL routines:ssl3_read_bytes:tlsv1 alert internal error:../deps/openssl/openssl/ssl/record/rec_layer_s3.c:1586:SSL alert number 80
+              ] {
+                library: 'SSL routines',
+                reason: 'tlsv1 alert internal error',
+                code: 'ERR_SSL_TLSV1_ALERT_INTERNAL_ERROR'
+              },
+              [Symbol(errorLabels)]: Set(1) { 'ResetPool' }
+            },
+            topologyVersion: null,
+            setName: null,
+            setVersion: null,
+            electionId: null,
+            logicalSessionTimeoutMinutes: null,
+            primary: null,
+            me: null,
+            '$clusterTime': null
+          }
+        },
+        stale: false,
+        compatible: true,
+        heartbeatFrequencyMS: 10000,
+        localThresholdMS: 15,
+        setName: 'atlas-12aw0j-shard-0',
+        maxElectionId: null,
+        maxSetVersion: null,
+        commonWireVersion: 0,
+        logicalSessionTimeoutMinutes: null
+      },
+      code: undefined
+    }
+  ],
+  [Symbol(message)]: `{"level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{},"setName":"atlas-12aw0j-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"service":"index","stack":"MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/\\n    at _handleConnectionErrors (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:805:11)\\n    at NativeConnection.openUri (/home/musediq/Documents/duplo-backend/node_modules/mongoose/lib/connection.js:780:11)\\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\\n    at async connectToMongoDB (/home/musediq/Documents/duplo-backend/index.js:18:5)","timestamp":"2023-09-28 12:34:23"}`
+}
+2023-09-28 13:05:48 error: Error connecting to MongoDB: bad auth : authentication failed {
+  service: 'index',
+  ok: 0,
+  code: 8000,
+  codeName: 'AtlasError',
+  connectionGeneration: 0,
+  stack: 'MongoServerError: bad auth : authentication failed\n' +
+    '    at Connection.onMessage (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:202:26)\n' +
+    '    at MessageStream.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:61:60)\n' +
+    '    at MessageStream.emit (node:events:514:28)\n' +
+    '    at processIncomingData (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:124:16)\n' +
+    '    at MessageStream._write (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:33:9)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:392:12)\n' +
+    '    at _write (node:internal/streams/writable:333:10)\n' +
+    '    at Writable.write (node:internal/streams/writable:337:10)\n' +
+    '    at TLSSocket.ondata (node:internal/streams/readable:766:22)\n' +
+    '    at TLSSocket.emit (node:events:514:28)',
+  [Symbol(errorLabels)]: Set(2) { 'HandshakeError', 'ResetPool' },
+  [Symbol(level)]: 'error',
+  [Symbol(splat)]: [
+    MongoServerError: bad auth : authentication failed
+        at Connection.onMessage (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:202:26)
+        at MessageStream.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:61:60)
+        at MessageStream.emit (node:events:514:28)
+        at processIncomingData (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:124:16)
+        at MessageStream._write (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+        at writeOrBuffer (node:internal/streams/writable:392:12)
+        at _write (node:internal/streams/writable:333:10)
+        at Writable.write (node:internal/streams/writable:337:10)
+        at TLSSocket.ondata (node:internal/streams/readable:766:22)
+        at TLSSocket.emit (node:events:514:28) {
+      ok: 0,
+      code: 8000,
+      codeName: 'AtlasError',
+      connectionGeneration: 0,
+      [Symbol(errorLabels)]: Set(2) { 'HandshakeError', 'ResetPool' }
+    }
+  ],
+  [Symbol(message)]: '{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"level":"error","message":"Error connecting to MongoDB: bad auth : authentication failed","ok":0,"service":"index","stack":"MongoServerError: bad auth : authentication failed\\n    at Connection.onMessage (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:202:26)\\n    at MessageStream.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:61:60)\\n    at MessageStream.emit (node:events:514:28)\\n    at processIncomingData (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:124:16)\\n    at MessageStream._write (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:33:9)\\n    at writeOrBuffer (node:internal/streams/writable:392:12)\\n    at _write (node:internal/streams/writable:333:10)\\n    at Writable.write (node:internal/streams/writable:337:10)\\n    at TLSSocket.ondata (node:internal/streams/readable:766:22)\\n    at TLSSocket.emit (node:events:514:28)","timestamp":"2023-09-28 13:05:48"}'
+}
+2023-09-28 13:05:48 error: Error connecting to MongoDB: bad auth : authentication failed {
+  service: 'index',
+  ok: 0,
+  code: 8000,
+  codeName: 'AtlasError',
+  connectionGeneration: 0,
+  stack: 'MongoServerError: bad auth : authentication failed\n' +
+    '    at Connection.onMessage (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:202:26)\n' +
+    '    at MessageStream.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:61:60)\n' +
+    '    at MessageStream.emit (node:events:514:28)\n' +
+    '    at processIncomingData (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:124:16)\n' +
+    '    at MessageStream._write (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:33:9)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:392:12)\n' +
+    '    at _write (node:internal/streams/writable:333:10)\n' +
+    '    at Writable.write (node:internal/streams/writable:337:10)\n' +
+    '    at TLSSocket.ondata (node:internal/streams/readable:766:22)\n' +
+    '    at TLSSocket.emit (node:events:514:28)',
+  [Symbol(errorLabels)]: Set(2) { 'HandshakeError', 'ResetPool' },
+  [Symbol(level)]: 'error',
+  [Symbol(splat)]: [
+    MongoServerError: bad auth : authentication failed
+        at Connection.onMessage (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:202:26)
+        at MessageStream.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:61:60)
+        at MessageStream.emit (node:events:514:28)
+        at processIncomingData (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:124:16)
+        at MessageStream._write (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+        at writeOrBuffer (node:internal/streams/writable:392:12)
+        at _write (node:internal/streams/writable:333:10)
+        at Writable.write (node:internal/streams/writable:337:10)
+        at TLSSocket.ondata (node:internal/streams/readable:766:22)
+        at TLSSocket.emit (node:events:514:28) {
+      ok: 0,
+      code: 8000,
+      codeName: 'AtlasError',
+      connectionGeneration: 0,
+      [Symbol(errorLabels)]: Set(2) { 'HandshakeError', 'ResetPool' }
+    }
+  ],
+  [Symbol(message)]: '{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"level":"error","message":"Error connecting to MongoDB: bad auth : authentication failed","ok":0,"service":"index","stack":"MongoServerError: bad auth : authentication failed\\n    at Connection.onMessage (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:202:26)\\n    at MessageStream.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:61:60)\\n    at MessageStream.emit (node:events:514:28)\\n    at processIncomingData (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:124:16)\\n    at MessageStream._write (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:33:9)\\n    at writeOrBuffer (node:internal/streams/writable:392:12)\\n    at _write (node:internal/streams/writable:333:10)\\n    at Writable.write (node:internal/streams/writable:337:10)\\n    at TLSSocket.ondata (node:internal/streams/readable:766:22)\\n    at TLSSocket.emit (node:events:514:28)","timestamp":"2023-09-28 13:05:48"}'
+}
+2023-09-28 13:05:48 error: Error connecting to MongoDB: bad auth : authentication failed {
+  service: 'index',
+  ok: 0,
+  code: 8000,
+  codeName: 'AtlasError',
+  connectionGeneration: 0,
+  stack: 'MongoServerError: bad auth : authentication failed\n' +
+    '    at Connection.onMessage (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:202:26)\n' +
+    '    at MessageStream.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:61:60)\n' +
+    '    at MessageStream.emit (node:events:514:28)\n' +
+    '    at processIncomingData (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:124:16)\n' +
+    '    at MessageStream._write (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:33:9)\n' +
+    '    at writeOrBuffer (node:internal/streams/writable:392:12)\n' +
+    '    at _write (node:internal/streams/writable:333:10)\n' +
+    '    at Writable.write (node:internal/streams/writable:337:10)\n' +
+    '    at TLSSocket.ondata (node:internal/streams/readable:766:22)\n' +
+    '    at TLSSocket.emit (node:events:514:28)',
+  [Symbol(errorLabels)]: Set(2) { 'HandshakeError', 'ResetPool' },
+  [Symbol(level)]: 'error',
+  [Symbol(splat)]: [
+    MongoServerError: bad auth : authentication failed
+        at Connection.onMessage (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:202:26)
+        at MessageStream.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:61:60)
+        at MessageStream.emit (node:events:514:28)
+        at processIncomingData (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:124:16)
+        at MessageStream._write (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:33:9)
+        at writeOrBuffer (node:internal/streams/writable:392:12)
+        at _write (node:internal/streams/writable:333:10)
+        at Writable.write (node:internal/streams/writable:337:10)
+        at TLSSocket.ondata (node:internal/streams/readable:766:22)
+        at TLSSocket.emit (node:events:514:28) {
+      ok: 0,
+      code: 8000,
+      codeName: 'AtlasError',
+      connectionGeneration: 0,
+      [Symbol(errorLabels)]: Set(2) { 'HandshakeError', 'ResetPool' }
+    }
+  ],
+  [Symbol(message)]: '{"code":8000,"codeName":"AtlasError","connectionGeneration":0,"level":"error","message":"Error connecting to MongoDB: bad auth : authentication failed","ok":0,"service":"index","stack":"MongoServerError: bad auth : authentication failed\\n    at Connection.onMessage (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:202:26)\\n    at MessageStream.<anonymous> (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/connection.js:61:60)\\n    at MessageStream.emit (node:events:514:28)\\n    at processIncomingData (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:124:16)\\n    at MessageStream._write (/home/musediq/Documents/duplo-backend/node_modules/mongodb/lib/cmap/message_stream.js:33:9)\\n    at writeOrBuffer (node:internal/streams/writable:392:12)\\n    at _write (node:internal/streams/writable:333:10)\\n    at Writable.write (node:internal/streams/writable:337:10)\\n    at TLSSocket.ondata (node:internal/streams/readable:766:22)\\n    at TLSSocket.emit (node:events:514:28)","timestamp":"2023-09-28 13:05:48"}'
+}
+2023-09-28 16:01:13 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 16:01:13"}'
+}
+2023-09-28 16:01:16 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 16:01:16"}'
+}
+2023-09-28 16:04:29 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 16:04:29"}'
+}
+2023-09-28 16:04:32 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 16:04:32"}'
+}
+2023-09-28 16:09:17 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 16:09:17"}'
+}
+2023-09-28 16:09:20 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 16:09:20"}'
+}
+2023-09-28 16:14:03 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 16:14:03"}'
+}
+2023-09-28 16:14:05 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 16:14:05"}'
+}
+2023-09-28 16:15:56 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 16:15:56"}'
+}
+2023-09-28 16:15:59 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 16:15:59"}'
+}
+2023-09-28 16:16:31 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 16:16:31"}'
+}
+2023-09-28 16:16:33 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 16:16:33"}'
+}
+2023-09-28 16:18:46 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 16:18:46"}'
+}
+2023-09-28 16:18:56 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 16:18:56"}'
+}
+2023-09-28 16:18:58 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 16:18:58"}'
+}
+2023-09-28 16:22:43 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 16:22:43"}'
+}
+2023-09-28 16:22:46 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 16:22:46"}'
+}
+2023-09-28 16:27:36 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 16:27:36"}'
+}
+2023-09-28 16:27:48 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 16:27:48"}'
+}
+2023-09-28 16:28:12 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 16:28:12"}'
+}
+2023-09-28 16:28:14 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 16:28:14"}'
+}
+2023-09-28 16:29:09 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 16:29:09"}'
+}
+2023-09-28 16:29:11 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 16:29:11"}'
+}
+2023-09-28 16:32:40 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 16:32:40"}'
+}
+2023-09-28 16:32:52 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 16:32:52"}'
+}
+2023-09-28 16:38:30 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 16:38:30"}'
+}
+2023-09-28 16:38:33 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 16:38:33"}'
+}
+2023-09-28 19:57:13 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 19:57:13"}'
+}
+2023-09-28 19:57:21 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 19:57:21"}'
+}
+2023-09-28 19:58:38 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 19:58:38"}'
+}
+2023-09-28 19:58:52 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 19:58:52"}'
+}
+2023-09-28 19:58:54 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 19:58:54"}'
+}
+2023-09-28 20:04:58 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:04:58"}'
+}
+2023-09-28 20:05:11 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:05:11"}'
+}
+2023-09-28 20:06:42 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:06:42"}'
+}
+2023-09-28 20:06:45 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:06:45"}'
+}
+2023-09-28 20:07:32 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:07:32"}'
+}
+2023-09-28 20:07:34 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:07:34"}'
+}
+2023-09-28 20:10:19 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:10:19"}'
+}
+2023-09-28 20:10:21 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:10:21"}'
+}
+2023-09-28 20:12:32 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:12:32"}'
+}
+2023-09-28 20:12:44 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:12:44"}'
+}
+2023-09-28 20:19:18 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:19:18"}'
+}
+2023-09-28 20:19:30 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:19:30"}'
+}
+2023-09-28 20:22:57 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:22:57"}'
+}
+2023-09-28 20:23:09 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:23:09"}'
+}
+2023-09-28 20:23:14 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:23:14"}'
+}
+2023-09-28 20:23:16 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:23:16"}'
+}
+2023-09-28 20:25:35 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:25:35"}'
+}
+2023-09-28 20:25:47 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:25:47"}'
+}
+2023-09-28 20:26:39 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:26:39"}'
+}
+2023-09-28 20:26:52 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:26:52"}'
+}
+2023-09-28 20:30:28 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:30:28"}'
+}
+2023-09-28 20:30:31 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:30:31"}'
+}
+2023-09-28 20:31:48 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:31:48"}'
+}
+2023-09-28 20:31:50 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:31:50"}'
+}
+2023-09-28 20:32:05 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:32:05"}'
+}
+2023-09-28 20:32:07 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:32:07"}'
+}
+2023-09-28 20:35:29 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:35:29"}'
+}
+2023-09-28 20:35:42 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:35:42"}'
+}
+2023-09-28 20:44:06 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:44:06"}'
+}
+2023-09-28 20:44:19 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:44:19"}'
+}
+2023-09-28 20:45:31 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:45:31"}'
+}
+2023-09-28 20:45:33 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:45:33"}'
+}
+2023-09-28 20:47:01 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:47:01"}'
+}
+2023-09-28 20:47:16 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:47:16"}'
+}
+2023-09-28 20:58:37 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 20:58:37"}'
+}
+2023-09-28 20:58:40 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 20:58:40"}'
+}
+2023-09-28 21:00:27 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 21:00:27"}'
+}
+2023-09-28 21:00:34 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 21:00:34"}'
+}
+2023-09-28 21:07:23 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 21:07:23"}'
+}
+2023-09-28 21:07:26 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 21:07:26"}'
+}
+2023-09-28 21:14:40 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 21:14:40"}'
+}
+2023-09-28 21:14:53 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 21:14:53"}'
+}
+2023-09-28 21:19:33 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 21:19:33"}'
+}
+2023-09-28 21:19:41 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 21:19:41"}'
+}
+2023-09-28 21:24:02 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 21:24:02"}'
+}
+2023-09-28 21:24:04 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 21:24:04"}'
+}
+2023-09-28 21:28:24 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 21:28:24"}'
+}
+2023-09-28 21:28:26 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 21:28:26"}'
+}
+2023-09-28 21:32:37 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 21:32:37"}'
+}
+2023-09-28 21:32:39 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 21:32:39"}'
+}
+2023-09-28 21:39:14 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 21:39:14"}'
+}
+2023-09-28 21:39:17 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 21:39:17"}'
+}
+2023-09-28 21:44:01 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 21:44:01"}'
+}
+2023-09-28 21:44:08 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 21:44:08"}'
+}
+2023-09-28 21:44:45 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 21:44:45"}'
+}
+2023-09-28 21:44:47 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 21:44:47"}'
+}
+2023-09-28 21:46:51 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 21:46:51"}'
+}
+2023-09-28 21:47:04 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 21:47:04"}'
+}
+2023-09-28 21:53:50 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 21:53:50"}'
+}
+2023-09-28 21:53:53 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 21:53:53"}'
+}
+2023-09-28 21:54:05 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 21:54:05"}'
+}
+2023-09-28 22:07:11 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-28 22:07:11"}'
+}
+2023-09-28 22:07:18 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-28 22:07:18"}'
+}
+2023-09-29 02:53:06 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-29 02:53:06"}'
+}
+2023-09-29 02:53:08 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-29 02:53:08"}'
+}
+2023-09-29 03:16:29 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-29 03:16:29"}'
+}
+2023-09-29 03:16:32 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-29 03:16:32"}'
+}
+2023-09-29 03:18:52 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-29 03:18:52"}'
+}
+2023-09-29 03:18:54 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-29 03:18:54"}'
+}
+2023-09-29 03:32:42 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-29 03:32:42"}'
+}
+2023-09-29 03:32:44 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-29 03:32:44"}'
+}
+2023-09-29 03:32:47 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-29 03:32:47"}'
+}
+2023-09-29 03:32:50 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-29 03:32:50"}'
+}
+2023-09-29 03:36:53 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-29 03:36:53"}'
+}
+2023-09-29 03:36:55 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-29 03:36:55"}'
+}
+2023-09-29 03:40:36 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-29 03:40:36"}'
+}
+2023-09-29 03:40:38 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-29 03:40:38"}'
+}
+2023-09-29 03:41:43 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-29 03:41:43"}'
+}
+2023-09-29 03:41:45 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-29 03:41:45"}'
+}
+2023-09-29 03:46:01 info: Server is running on port 3000 {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Server is running on port 3000","service":"index","timestamp":"2023-09-29 03:46:01"}'
+}
+2023-09-29 03:46:19 info: Connected to MongoDB {
+  service: 'index',
+  [Symbol(level)]: 'info',
+  [Symbol(message)]: '{"level":"info","message":"Connected to MongoDB","service":"index","timestamp":"2023-09-29 03:46:19"}'
+}

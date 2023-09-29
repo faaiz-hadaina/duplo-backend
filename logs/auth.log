@@ -1,0 +1,150 @@
+2023-09-28 16:03:11 error: Login failed: secretOrPrivateKey must have a value {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"Login failed: secretOrPrivateKey must have a value","service":"auth","timestamp":"2023-09-28 16:03:11"}'
+}
+2023-09-28 16:03:11 error: Login failed: secretOrPrivateKey must have a value {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"Login failed: secretOrPrivateKey must have a value","service":"auth","timestamp":"2023-09-28 16:03:11"}'
+}
+2023-09-28 16:03:11 error: Login failed: secretOrPrivateKey must have a value {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"Login failed: secretOrPrivateKey must have a value","service":"auth","timestamp":"2023-09-28 16:03:11"}'
+}
+2023-09-28 16:09:35 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:09:35"}'
+}
+2023-09-28 16:09:35 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:09:35"}'
+}
+2023-09-28 16:09:35 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:09:35"}'
+}
+2023-09-28 16:11:32 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:11:32"}'
+}
+2023-09-28 16:11:32 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:11:32"}'
+}
+2023-09-28 16:11:32 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:11:32"}'
+}
+2023-09-28 16:15:23 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:15:23"}'
+}
+2023-09-28 16:15:23 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:15:23"}'
+}
+2023-09-28 16:15:23 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:15:23"}'
+}
+2023-09-28 16:16:09 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:16:09"}'
+}
+2023-09-28 16:16:09 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:16:09"}'
+}
+2023-09-28 16:16:09 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:16:09"}'
+}
+2023-09-28 16:17:01 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:17:01"}'
+}
+2023-09-28 16:17:01 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:17:01"}'
+}
+2023-09-28 16:17:01 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:17:01"}'
+}
+2023-09-28 16:19:12 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:19:12"}'
+}
+2023-09-28 16:19:12 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:19:12"}'
+}
+2023-09-28 16:19:12 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:19:12"}'
+}
+2023-09-28 16:22:52 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:22:52"}'
+}
+2023-09-28 16:22:52 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:22:52"}'
+}
+2023-09-28 16:22:52 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:22:52"}'
+}
+2023-09-28 16:24:00 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:24:00"}'
+}
+2023-09-28 16:24:00 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:24:00"}'
+}
+2023-09-28 16:24:00 error: invalid token {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: '{"level":"error","message":"invalid token","service":"auth","timestamp":"2023-09-28 16:24:00"}'
+}
+2023-09-28 21:38:44 error: Login failed: Cannot read properties of null (reading 'password') {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: `{"level":"error","message":"Login failed: Cannot read properties of null (reading 'password')","service":"auth","timestamp":"2023-09-28 21:38:44"}`
+}
+2023-09-28 21:38:44 error: Login failed: Cannot read properties of null (reading 'password') {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: `{"level":"error","message":"Login failed: Cannot read properties of null (reading 'password')","service":"auth","timestamp":"2023-09-28 21:38:44"}`
+}
+2023-09-28 21:38:44 error: Login failed: Cannot read properties of null (reading 'password') {
+  service: 'auth',
+  [Symbol(level)]: 'error',
+  [Symbol(message)]: `{"level":"error","message":"Login failed: Cannot read properties of null (reading 'password')","service":"auth","timestamp":"2023-09-28 21:38:44"}`
+}
