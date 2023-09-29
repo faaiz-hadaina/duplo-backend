@@ -1,35 +1,20 @@
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const Business = require("../../business/business.model");
-const createLogger = require("../../../service/winston.service");
-const generateUniqueBusinessID = require("../../../utils/generateRandom.utils");
+const Department = require("../department/department.model");
+const createLogger = require("../../service/winston.service");
+const generateUniqueBusinessID = require("../../utils/generateRandom");
 
 const logger = createLogger("auth", "auth.log");
 
-class APIfeatures {
-  constructor(query, queryString) {
-    this.query = query;
-    this.queryString = queryString;
-  }
-
-  paginating() {
-    const page = this.queryString.page * 1 || 1;
-    const limit = this.queryString.limit * 1 || 9;
-    const skip = (page - 1) * limit;
-    this.query = this.query.skip(skip).limit(limit);
-    return this;
-  }
-}
-
-const businessAuthCtrl = {
+const authController = {
   register: async (req, res) => {
     try {
       const { name, password } = req.body;
       const salt = await bcrypt.genSalt(10);
       const encryptedPassword = await bcrypt.hash(password, salt);
 
-      const businessName = await Business.findOne({ name });
-      if (businessName) {
+      const departmentName = await Department.findOne({ name });
+      if (departmentName) {
         return res.status(400).json({
           message: `${name} is already registered`,
           success: false,
@@ -45,7 +30,7 @@ const businessAuthCtrl = {
 
       const businessID = await generateUniqueBusinessID();
 
-      const newAccount = new Business({
+      const newAccount = new Department({
         name,
         password: encryptedPassword,
         businessID,
@@ -55,7 +40,7 @@ const businessAuthCtrl = {
 
       res.status(201).json({
         msg: "Registration Success!",
-        business: {
+        department: {
           ...newAccount._doc,
           password: "",
         },
@@ -73,18 +58,18 @@ const businessAuthCtrl = {
   login: async (req, res) => {
     try {
       const { name, password } = req.body;
-      const business = await Business.findOne({ name });
-      if (!business)
+      const department = await Department.findOne({ name });
+      if (!department)
         res.status(400).json({
-          message: `${business} does not exist`,
+          message: `${department} does not exist`,
           success: false,
         });
-      const isMatch = await bcrypt.compare(password, business.password);
+      const isMatch = await bcrypt.compare(password, department.password);
       if (isMatch) {
         const token = jwt.sign(
           {
-            id: business._id,
-            name: business.name,
+            id: department._id,
+            name: department.name,
           },
           process.env.SECRET
         );
@@ -103,25 +88,6 @@ const businessAuthCtrl = {
       });
     }
   },
-  getAllBusinesses: async (req, res) => {
-    try {
-      const { page, limit } = req.query;
-
-      let query = Business.find();
-
-      if (page && limit) {
-        const features = new APIfeatures(query, req.query).paginating();
-        query = features.query;
-      }
-
-      const businesses = await query.exec();
-
-      res.status(200).json(businesses);
-    } catch (error) {
-      console.error(error);
-      res.status(500).json({ error: "Internal Server Error" });
-    }
-  },
 };
 
-module.exports = businessAuthCtrl;
+module.exports = authController;

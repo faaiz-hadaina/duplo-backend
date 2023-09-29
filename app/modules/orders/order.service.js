@@ -1,12 +1,11 @@
 const axios = require("axios");
 const Transaction = require("../transaction/transaction.model");
-const calculateCreditScore = require("../../utils/calculateScore.utils");
+const calculateCreditScore = require("../../utils/calculateScore");
 
 class OrderService {
   static async processOrder(orderData) {
     const transaction = new Transaction(orderData);
     const savedOrder = await transaction.save();
-
     const taxPayload = {
       order_id: savedOrder._id,
       platform_code: "022",
