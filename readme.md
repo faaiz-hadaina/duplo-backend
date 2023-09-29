@@ -1,6 +1,6 @@
-# Order Management System
+# Technical Lead Assessment
 
-This is backend for an Order Management System project. The system allows businesses to manage their orders and provides pagination for efficiently handling large datasets.
+This is backend for a Technical Lead Assessment project to manage orders. The system allows businesses to manage their orders and provides pagination for efficiently handling of large datasets.
 
 ## Table of Contents
 
@@ -38,7 +38,7 @@ Before you begin, ensure you have met the following requirements:
 2. Navigate to the project directory:
 
    ```bash
-   cd order-management-system
+   cd duplo-backend
    ```
 
 3. Install the required dependencies:
