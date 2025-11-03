@@ -128,3 +128,22 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# C# / .NET specific
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+*.rsuser
+*.userosscache
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.nupkg
+*.snupkg
+
+# Configuration files with secrets
+appsettings.Development.json
+appsettings.Production.json

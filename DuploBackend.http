@@ -1,0 +1,47 @@
+@DuploBackend_HostAddress = http://localhost:5179
+
+### Welcome Endpoint
+GET {{DuploBackend_HostAddress}}/
+Accept: application/json
+
+### Register Department
+POST {{DuploBackend_HostAddress}}/api/department/register
+Content-Type: application/json
+
+{
+  "name": "TestDepartment",
+  "password": "password123"
+}
+
+### Login Department
+POST {{DuploBackend_HostAddress}}/api/department/login
+Content-Type: application/json
+
+{
+  "name": "TestDepartment",
+  "password": "password123"
+}
+
+### Register Business
+POST {{DuploBackend_HostAddress}}/api/business/register
+Content-Type: application/json
+
+{
+  "name": "TestBusiness",
+  "password": "password123"
+}
+
+### Login Business
+POST {{DuploBackend_HostAddress}}/api/business/login
+Content-Type: application/json
+
+{
+  "name": "TestBusiness",
+  "password": "password123"
+}
+
+### Get All Businesses
+GET {{DuploBackend_HostAddress}}/api/business?page=1&limit=10
+Accept: application/json
+
+###
