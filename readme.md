@@ -51,8 +51,24 @@ Before you begin, ensure you have met the following requirements:
 
 4. Configure the application settings:
 
-   Update `appsettings.json` with your MongoDB connection string and other configuration settings:
+   **Option 1: Environment Variables (Recommended for production)**
+   
+   Set the following environment variables:
+   ```bash
+   export MongoDbSettings__ConnectionString="your-mongodb-connection-string"
+   export MongoDbSettings__DatabaseName="your-database-name"
+   export JwtSettings__Secret="your-jwt-secret-key-at-least-32-characters"
+   ```
 
+   **Option 2: Configuration File (For development)**
+   
+   Copy `appsettings.Development.Example.json` to `appsettings.Development.json` and update with your settings:
+
+   ```bash
+   cp appsettings.Development.Example.json appsettings.Development.json
+   ```
+   
+   Then edit `appsettings.Development.json`:
    ```json
    {
      "MongoDbSettings": {
@@ -60,12 +76,14 @@ Before you begin, ensure you have met the following requirements:
        "DatabaseName": "your-database-name"
      },
      "JwtSettings": {
-       "Secret": "your-jwt-secret-key",
+       "Secret": "your-jwt-secret-key-at-least-32-characters",
        "Issuer": "DuploBackend",
        "Audience": "DuploBackend"
      }
    }
    ```
+
+   **Important**: Never commit `appsettings.Development.json` with real credentials to source control.
 
 5. Run the application:
 

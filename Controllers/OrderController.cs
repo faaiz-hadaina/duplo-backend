@@ -117,8 +117,7 @@ public class OrderController : ControllerBase
     {
         try
         {
-            var today = DateTime.Today;
-            var startOfDay = today.Date;
+            var startOfDay = DateTime.Today;
 
             var filter = Builders<Transaction>.Filter.And(
                 Builders<Transaction>.Filter.Eq(t => t.BusinessID, businessID),

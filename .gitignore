@@ -143,3 +143,7 @@ project.fragment.lock.json
 artifacts/
 *.nupkg
 *.snupkg
+
+# Configuration files with secrets
+appsettings.Development.json
+appsettings.Production.json
